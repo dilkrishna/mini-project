@@ -1,7 +1,7 @@
 <?php
 
 
-class UserController extends CI_Controller{
+class UserController extends MY_Controller{
     
     public function index()
     {
