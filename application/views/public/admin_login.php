@@ -21,18 +21,18 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                <label for="password" class="col-lg-2 control-label">Password</label>
-                    <div class="col-lg-6">
+                     <label for="password" class="col-lg-2 control-label">Password</label>
+                   <div class="col-lg-6">
                         <?php echo form_input(['class'=>'form-control','placeholder'=>'Password','name'=>'password','type'=>'password']) ?>
                         <!--<input class="form-control" placeholder="Password" type="password">-->
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <?php echo form_error('password','<p class=text-danger>','</P>');?>
-                </div>
+                </div> 
             </div>
-        </div>
-    <div class="form-group">
+                <div class="col-lg-6">
+                    <?php echo form_error('password','<p class=text-danger>','</p>');?>
+                </div>
+        </div> 
+     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
         <button type="reset" class="btn btn-default">Reset</button>
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -40,10 +40,6 @@
     </div>
   </fieldset>
 </div>
-<?php echo form_close(); ?>
-</div>
-</fieldset>
-
 
 <?php $this->load->view('public/public_footer')?>
 
