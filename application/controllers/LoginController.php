@@ -12,6 +12,7 @@ class LoginController extends MY_Controller{
     {
         $this->form_validation->set_rules('username','username','required|alpha|trim|');
         $this->form_validation->set_rules('password','password','required|');
+        $this->form_validation->set_error_delimiters('<P class= "text-danger">','</p>');
         
         if($this->form_validation->run()){
             echo "sucessful";
