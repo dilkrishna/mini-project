@@ -1,18 +1,21 @@
-<?php $this->load->view('public/public_header')?>
+<?php include_once 'public_header.php'?>
 <div class="container">
-<form class="form-horizontal">
+<?php echo form_open('AdminController/dashboard',['class'=>'form-horizontal']); ?>
+<!--<form class="form-horizontal" action="AdminController/dashboard">-->
   <fieldset>
     <legend>Article</legend>
     <div class="form-group">
         <label for="username" class="col-lg-2 control-label">Username</label>
         <div class="col-lg-10">
-            <input class="form-control" id="inputEmail" placeholder="Username" type="text">
+            <?php echo form_input(['class'=>'form-control','placeholder'=>'Username','type'=>'text'])?>
+<!--            <input class="form-control" placeholder="Username" type="text" >-->
         </div>
     </div>    
      <div class="form-group">
         <label for="password" class="col-lg-2 control-label">Password</label>
         <div class="col-lg-10">
-            <input class="form-control" id="inputEmail" placeholder="Password" type="text">
+            <?php echo form_input(['class'=>'form-control','placeholder'=>'Password','type'=>'password']) ?>
+            <!--<input class="form-control" placeholder="Password" type="password">-->
         </div>
     </div>
     <div class="form-group">
@@ -22,8 +25,9 @@
       </div>
     </div>
   </fieldset>
-</form>
+<?php echo form_close(); ?>
 </div>
+</fieldset>
 
 
 <?php $this->load->view('public/public_footer')?>

@@ -3,8 +3,9 @@
 
 class AdminController extends MY_Controller{
     
-    public function index()
+    public function dashboard()
     {
-    $this->load->view('public/admin_login');        
+        echo 'logged in';
+//    $this->load->view('public/admin_login');        
     }
 }

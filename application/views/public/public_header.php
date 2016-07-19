@@ -19,7 +19,7 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login</a></li>
+                <li><a href="<?= base_url('LoginController')?>">Login</a></li>
                 <li><a href="#">Signup</a></li>
               </ul>
             </div>
