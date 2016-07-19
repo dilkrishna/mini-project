@@ -19,9 +19,10 @@ class LoginController extends MY_Controller{
         $password =  hash('sha512', $this->input->post('password'));
         
         $this->load->model('login_model');
-        $login = $this->login_model->login_valid($username,$password);
-            if($login){
-                echo "successful log in";
+        $login_id = $this->login_model->login_valid($username,$password);
+            if($login_id){
+                $this->session->set_userdata('user_id',$login_id);
+                redirect('AdminController/dashboard');
             }
             else{
                 echo 'invalid username and password';
