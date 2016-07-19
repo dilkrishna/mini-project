@@ -20,7 +20,7 @@
               </form>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?= base_url('LoginController')?>">Login</a></li>
-                <li><a href="#">Signup</a></li>
+                <li><a href="<?= base_url('SignupController')?>">Signup</a></li>
               </ul>
             </div>
           </div>
