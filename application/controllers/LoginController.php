@@ -25,7 +25,8 @@ class LoginController extends MY_Controller{
                 redirect('AdminController/dashboard');
             }
             else{
-                echo 'invalid username and password';
+                $this->session->set_flashdata('login_failed','Invalid Username Or Password');
+                redirect('LoginController');
         }
         }
         else{
