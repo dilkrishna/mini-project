@@ -1,1 +1,4 @@
-<?php include_once('public/public_header.php')?>
+<?php $this->load->view('admin/admin_header')?>
+
+
+<?php $this->load->view('admin/admin_footer')?>

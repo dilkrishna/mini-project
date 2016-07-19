@@ -32,5 +32,11 @@ class LoginController extends MY_Controller{
         else{
               $this->load->view('public/admin_login');
         }
-}
+    }
+    public function logout()
+    {
+        $this->session->unset_userdata();
+        session_destroy();
+        redirect('LoginController');
+    }
 }
