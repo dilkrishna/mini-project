@@ -10,8 +10,8 @@ class login_model extends CI_Model{
           if( $q->row()){
               $q->row()->id;
           return TRUE;
-          }
-          
+          }         
+
           else{
               return FALSE;
           }

@@ -19,7 +19,11 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?= base_url('LoginController/logout')?>">Logout</a></li>
+                  
+                <li>
+                    Welcome <?php // echo $username; ?>!
+                    <a href="<?= base_url('LoginController/logout')?>">Logout</a>
+                </li>
               </ul>
             </div>
           </div>

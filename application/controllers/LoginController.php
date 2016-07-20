@@ -20,7 +20,7 @@ class LoginController extends MY_Controller{
         
         $this->load->model('login_model');
         $login_id = $this->login_model->login_valid($username,$password);
-            if($login_id){
+             if($login_id){
                 $this->session->set_userdata('user_id',$login_id);
                 redirect('AdminController/dashboard');
             }
